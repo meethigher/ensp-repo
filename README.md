@@ -2,11 +2,13 @@
 
 作用：将两个子网通过路由器进行组网。
 
+预期：通过  `192.168.1.100`  去 `ping 10.0.0.10`，能连通。
+
 拓扑图
 
 ![image-20250330152442546](net-test/image-20250330152442546.png)
 
-打开`net-test.topo`，启动所有设备。
+打开 `net-test.topo`，启动所有设备。
 
 路由器设备启动会略慢。直到等到连线上面所有点都变成绿色，表示网络已通。
 
@@ -51,11 +53,11 @@ GigabitEthernet0/0/2              unassigned           down       down
 NULL0                             unassigned           up         up(s)   
 ```
 
-通过 `192.168.1.100` 去`ping 10.0.0.10`，能连通，表示组网成功
-
 # net-port-test
 
-作用：在net-test的基础上，添加了httpserver和httpclient，打通两个子网的服务。
+作用：在 `net-test` 的基础上，添加了 `httpserver` 和 `httpclient`，打通两个子网的服务。
+
+预期：通过 `10.0.0.10` 访问 `192.168.1.109:80` ，可以访问到内容。
 
 拓扑图
 
