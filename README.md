@@ -52,3 +52,11 @@ NULL0                             unassigned           up         up(s)
 ```
 
 通过 `192.168.1.100` 去`ping 10.0.0.10`，能连通，表示组网成功
+
+# net-port-test
+
+作用：在net-test的基础上，添加了httpserver和httpclient，打通两个子网的服务。
+
+拓扑图
+
+![image-20250330155152548](net-port-test/image-20250330155152548.png)
